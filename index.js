@@ -20,7 +20,6 @@ async function run() {
     try {
         const userCollection = client.db('socialMedia').collection('users')
         const userMessageCollection = client.db('socialMedia').collection('userMessage')
-        const userImgMessageCollection = client.db('socialMedia').collection('userImgMessage')
 
         app.post('/users', async (req, res) => {
             const user = req.body;
